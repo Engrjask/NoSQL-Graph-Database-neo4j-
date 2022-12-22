@@ -1,0 +1,313 @@
+
+
+
+
+
+CREATE
+(G:Companies{name:'Gadgets Companies'})
+
+
+
+
+CREATE
+(S:Company {name: 'Samsung Electronics Co.,Ltd', Headquaters: 'Califonia USA',Year_founded:'1976'}),
+(A:Company {name: 'Apple Inc', Headquaters: 'South korea',Year_founded:'1969'})
+
+CREATE
+(SE:Subsidiary {name: 'Samsung Electronics'}),
+(SA:Subsidiary {name: 'Samsung Accessories',focus:'mobile accessories'}),
+(SP:Subsidiary {name: 'Samsung Phones',focus:'mobile phones'}),
+
+(AP:Subsidiary {name: 'Apple Phones', focus:'Mobile Phones'}),
+(AA:Subsidiary {name: 'Apple Accessories', focus:'Phone accessories'}),
+(AE:Subsidiary {name: 'Apple Electronics'})
+
+CREATE
+(SL:ElectronicDevices {name: 'Samsung Laptops'}),
+(ST:ElectronicDevices {name: 'Samsung tablets'}),
+(AL:ElectronicDevices {name: 'Apple Laptops'}),
+(AT:ElectronicDevices {name: 'Apple Tablets'})
+
+
+CREATE
+(SW:Accessories {name: 'Samsung Watch',connectivity:'Bluetooth'}),
+(AW:Accessories {name: 'Apple Watch',connectivity:'Bluetooth,Wi-Fi'}),
+(Airt:Accessories {name: 'Apple Airtags'})
+
+CREATE
+(AAi:Wireless_earbuds {name: 'Apple Airpods',connectivity:'Bluetooth' }),
+(SGB:Wireless_earbuds {name:'Samsung Galaxy Buds',connectivity:'Bluetooth'})
+
+
+CREATE
+(air1:earbuds {name: 'Apple Airpods 1', year:'2016', price:85}),
+(air2:earbuds {name: 'Apple Airpods 2',year:'2019', price:135}),
+(airp:earbuds {name: 'Apple Airpods Pro',year:'2019', price:210}),
+(airm:earbuds {name: 'Apple Airpod Max',year:'2020', price:480}),
+(air3:earbuds {name: 'Apple Airpods 3',year:'2021', price:215}),
+
+(bud:earbuds {name: 'Galaxy Buds 1', year:'2019', price:80}),
+(bud1:earbuds {name: 'Galaxy Buds Plus',year:'2020', price:123}),
+(bud2:earbuds {name: 'Galaxy Buds Live',year:'2020', price:200}),
+(bud3:earbuds {name: 'Galaxy Buds Pro',year:'2021', price:250}),
+(bud4:earbuds {name: 'Galaxy Buds 2',year:'2021', price:270})
+
+
+
+
+
+CREATE
+(Se3:SmartWatch {name: 'Apple Series 3', year:'2017', price:88}),
+(Se4:SmartWatch {name: 'Apple Series 4',year:'2018', price:225}),
+(Se5:SmartWatch {name: 'Apple Series 5',year:'2019', price:250}),
+(See:SmartWatch {name: 'Apple Series SE',year:'2020', price:270}),
+(Se6:SmartWatch {name: 'Apple Series 6',year:'2020', price:370}),
+(Se7:SmartWatch {name: 'Apple Series 7',year:'2021', price:450}),
+
+
+(SWatch:SmartWatch {name: 'galaxy watch', price:140, year:'2018'}),
+(Active:SmartWatch {name: 'galaxy watch active', price:205,year:'2019'}),
+(Gear:SmartWatch {name: 'galaxy watch 3', price_range:260,year:'2020'})
+
+
+
+
+
+
+
+
+
+CREATE
+(IO:Software {name: 'apple IOS'}),
+(AN:Software {name: 'Android'})
+
+
+
+
+CREATE
+(IPa:phone {name: 'iphone 6', year:'2014',camera_rating:'1', price:65,Security_type:'Password,Fingerprint'}),
+(IPb:phone {name: 'iphone 6 Plus',year:'2014',camera_rating:'1', price:83,Security_type:'Password,Fingerprint'}),
+
+(IPc:phone {name: 'iphone 6s',year:'2015', camera_rating:'1', price:72,Security_type:'Password,Fingerprint'}),
+(IPd:phone {name: 'iphone 6s Plus',year:'2015',camera_rating:'1', price:105,Security_type:'Password,Fingerprint'}),
+
+(IPe:phone {name: 'iphone se',year:'2016',camera_rating:'2', price:135,Security_type:'Password,Fingerprint'}),
+(IPf:phone {name: 'iphone 7',year:'2016',camera_rating:'2', price:120,Security_type:'Password,Fingerprint'}),
+(IPg:phone {name: 'iphone 7 plus', year:'2016',camera_rating:'2', price:190,Security_type:'Password,Fingerprint'}),
+
+(IPh:phone {name: 'iphone 8',year:'2017',camera_rating:'2', price:160,Security_type:'Password,Fingerprint'}),
+(IPi:phone {name: 'iphone 8 plus',year:'2017',camera_rating:'3', price:225,Security_type:'Password,Fingerprint'}),
+(IPm:phone {name:'iphone x', year:'2017',camera_rating:'3', price:260,Security_type:'Password,FaceID'}),
+
+(IPn:phone {name: 'iphone Xs',year:'2018',camera_rating:'3', price:275,Security_type:'Password,FaceID'}),
+(IPo:phone {name: 'iphone xr',year:'2018',camera_rating:'3', price:268,Security_type:'Password,FaceID'}),
+(IPp:phone {name:'iphone xs max', year:'2018',camera_rating:'4', price:380,Security_type:'Password,FaceID'}),
+
+
+
+(IP11:phone {name: 'iphone 11',year:'2019',camera_rating:'4', price:400,Security_type:'Password,FaceID'}),
+(IP11p:phone {name: 'iphone 11 Pro',year:'2019',camera_rating:'4', price:520,Security_type:'Password,FaceID'}),
+(IP11pm:phone {name:'iphone 11 Pro Max', year:'2019',camera_rating:'4', price:600,Security_type:'Password,FaceID'}),
+
+(IP12:phone {name: 'iphone 12',year:'2020',camera_rating:'5', price:650,Security_type:'Password,FaceID'}),
+(IP12p:phone {name: 'iphone 12 Pro',year:'2020',camera_rating:'5', price:770,Security_type:'Password,FaceID'}),
+(IP12pm:phone {name:'iphone 12 Pro max', year:'2020',camera_rating:'5', price:950,Security_type:'Password,FaceID'}),
+
+(IP13:phone {name: 'iphone 13',year:'2021',camera_rating:'6', price:750,Security_type:'Password,FaceID'}),
+(IP13p:phone {name: 'iphone 13 Pro',year:'2021',camera_rating:'6', price:1150,Security_type:'Password,FaceID'}),
+(IP13pm:phone {name:'iphone 13 Pro max', year:'2021',camera_rating:'6', price:1200,Security_type:'Password,FaceID'}),
+
+
+
+
+(S4:phone {name: 'samsung galaxy S4', year:'2014', camera_rating:'1', price:80,Security_type:'Password'}),
+(Sn4:phone {name: 'samsung galaxy Note 4', year:'2014', camera_rating:'1', price:85,Security_type:'Password'}),
+(S5:phone {name: 'samsung galaxy S5', year:'2015', camera_rating:'2', price:90,Security_type:'Password,Fingerprint'}),
+(Sn5:phone {name: 'samsung galaxy note 5', year:'2015', camera_rating:'2', price:90,Security_type:'Password,Fingerprint'}),
+(S6e:phone {name: 'samsung galaxy S6 edge', year:'2016',camera_rating:'3', price:105,Security_type:'Password,Fingerprint'}),
+(S6:phone {name: 'samsung galaxy S6', year:'2016',camera_rating:'3', price:100,Security_type:'Password,Fingerprint'}),
+(Sn6:phone {name: 'samsung galaxy note 6', year:'2016',camera_rating:'3', price:110,Security_type:'Password,Fingerprint'}),
+(S7:phone {name: 'samsung galaxy S7', year:'2017', camera_rating:'3', price:125,Security_type:'Password,Fingerprint'}),
+(Sn7:phone {name: 'samsung galaxy note 7', year:'2017', camera_rating:'4', price:130,Security_type:'Password,Fingerprint'}),
+(S8:phone {name: 'samsung galaxy S8', year:'2018',camera_rating:'4', price:160,Security_type:'Password,Fingerprint'}),
+(S8p:phone {name: 'samsung galaxy S8 plus', year:'2018',camera_rating:'4', price:175,Security_type:'Password,Fingerprint'}),
+(Sn8:phone {name: 'samsung galaxy note 8', year:'2018',camera_rating:'5', price:200,Security_type:'Password,Fingerprint'}),
+(S9:phone {name: 'samsung galaxy S9', year:'2016',camera_rating:'5', price:230,Security_type:'Password,Fingerprint'}),
+
+(S9p:phone {name: 'samsung galaxy S9 plus', year:'2019',camera_rating:'5', price:290,Security_type:'Password,Fingerprint'}),
+(Sn9:phone {name: 'samsung galaxy note 9', year:'2019',camera_rating:'5', price:350,Security_type:'Password,Fingerprint'}),
+(S10p:phone {name: 'samsung galaxy S10 plus', year:'2019',camera_rating:'4', price:390,Security_type:'FaceID,Password,Fingerprint'}),
+(Sn10:phone {name: 'samsung galaxy note 10', year:'2019',camera_rating:'5', price:450,Security_type:'FaceID,Password,Fingerprint'}),
+(S20:phone {name: 'samsung galaxy S20', year:'2020',camera_rating:'6', price:530,Security_type:'FaceID,Password,Fingerprint'}),
+(S20p:phone {name: 'samsung galaxy S20 plus', year:'2020',camera_rating:'6', price:700,Security_type:'FaceID,Password,Fingerprint'}),
+(Sn20:phone {name: 'samsung galaxy note 20', year:'2020',camera_rating:'6', price:730,Security_type:'FaceID,Password,Fingerprint'}),
+(S20Ul:phone {name: 'samsung galaxy S20 Ultra 5G', year:'2020',camera_rating:'6', price:840,Security_type:'FaceID,Password,Fingerprint'}),
+(Sn20Ul:phone {name: 'samsung galaxy note 20 Ultra 5G', year:'2020',camera_rating:'6', price:920,Security_type:'FaceID,Password,Fingerprint'}),
+(S21:phone {name: 'samsung galaxy S21', year:'2021',camera_rating:'6', price:1050, Security_type:'FaceID,Password,Fingerprint'}),
+(Sn21:phone {name: 'samsung galaxy note 21', year:'2021',camera_rating:'6', price:1100,Security_type:'FaceID,Password,Fingerprint'})
+
+
+
+
+
+CREATE 
+(ps:securityType {name:'Password'})
+
+
+
+CREATE
+ (A)-[:under_companies]->(G),
+ (S)-[:under_companies]->(G),
+
+ (A)-[:has_Subsidiary]->(AP),
+ (A)-[:has_Subsidiary]->(AA),
+ (A)-[:has_Subsidiary]->(AE),
+ (S)-[:has_Subsidiary]->(SE),
+ (S)-[:has_Subsidiary]->(SA),
+ (S)-[:has_Subsidiary]->(SP),
+
+
+  (SE)-[:Make_ElectronicDevices]->(SL),
+  (SE)-[:Make_ElectronicDevices]->(ST),
+ (AE)-[:Make_ElectronicDevices]->(AL),
+  (AE)-[:Make_ElectronicDevices]->(AT),
+
+  (SP)-[:uses_software]->(AN),
+(AP)-[:uses_software]->(IO),
+
+
+ (AA)-[:Produced_Accessories]->(AW),
+(AA)-[:Produced_Wireless_earbuds]->(AAi),
+(AA)-[:Produced_Accessories]->(Airt),
+
+
+ (SA)-[:Produced_Accessories]->(SW),
+(SA)-[:Produced_Wireless_earbuds]->(SGB),
+
+
+
+  (AP)-[:PRODUCED_PHONE]->(IPa),
+  (AP)-[:PRODUCED_PHONE]->(IPb),
+  (AP)-[:PRODUCED_PHONE]->(IPc),
+  (AP)-[:PRODUCED_PHONE]->(IPd),
+  (AP)-[:PRODUCED_PHONE]->(IPe),
+  (AP)-[:PRODUCED_PHONE]->(IPf),
+  (AP)-[:PRODUCED_PHONE]->(IPg),
+  (AP)-[:PRODUCED_PHONE]->(IPh),
+ (AP)-[:PRODUCED_PHONE]->(IPi),
+  (AP)-[:PRODUCED_PHONE]->(IPm),
+ (AP)-[:PRODUCED_PHONE]->(IPn),
+  (AP)-[:PRODUCED_PHONE]->(IPo),
+(AP)-[:PRODUCED_PHONE]->(IPp),
+  (AP)-[:PRODUCED_PHONE]->(IP11),
+  (AP)-[:PRODUCED_PHONE]->(IP11p),
+ (AP)-[:PRODUCED_PHONE]->(IP11pm),
+  (AP)-[:PRODUCED_PHONE]->(IP12),
+ (AP)-[:PRODUCED_PHONE]->(IP12p),
+  (AP)-[:PRODUCED_PHONE]->(IP12pm),
+(AP)-[:PRODUCED_PHONE]->(IP13),
+  (AP)-[:PRODUCED_PHONE]->(IP13p),
+(AP)-[:PRODUCED_PHONE]->(IP13pm),
+
+
+ (SP)-[:PRODUCED_PHONE]->(S4),
+  (SP)-[:PRODUCED_PHONE]->(Sn4),
+  (SP)-[:PRODUCED_PHONE]->(S5),
+  (SP)-[:PRODUCED_PHONE]->(Sn5),
+  (SP)-[:PRODUCED_PHONE]->(S6e),
+  (SP)-[:PRODUCED_PHONE]->(S6),
+  (SP)-[:PRODUCED_PHONE]->(Sn6),
+ (SP)-[:PRODUCED_PHONE]->(S7),
+  (SP)-[:PRODUCED_PHONE]->(Sn7),
+  (SP)-[:PRODUCED_PHONE]->(S8),
+  (SP)-[:PRODUCED_PHONES]->(S8p),
+  (SP)-[:PRODUCED_PHONE]->(Sn8),
+  (SP)-[:PRODUCED_PHONE]->(S9),
+  (SP)-[:PRODUCED_PHONE]->(S9p),
+ (SP)-[:PRODUCED_PHONE]->(Sn9),
+  (SP)-[:PRODUCED_PHONE]->(S10p),
+  (SP)-[:PRODUCED_PHONE]->(Sn10),
+  (SP)-[:PRODUCED_PHONE]->(S20),
+  (SP)-[:PRODUCED_PHONE]->(S20p),
+  (SP)-[:PRODUCED_PHONE]->(Sn20),
+  (SP)-[:PRODUCED_PHONE]->(S20Ul),
+  (SP)-[:PRODUCED_PHONE]->(Sn20Ul),
+  (SP)-[:PRODUCED_PHONE]->(S21),
+(SP)-[:PRODUCED_PHONE]->(Sn21),
+
+  (AW)-[:Has_SmartWatch]->(Se3),
+  (AW)-[:Has_SmartWatch]->(Se4),
+  (AW)-[:Has_SmartWatch]->(Se5),
+  (AW)-[:Has_SmartWatch]->(Se6),
+  (AW)-[:Has_SmartWatch]->(Se7),
+  (AW)-[:Has_SmartWatch]->(See),
+ 
+ (SW)-[:Has_SmartWatch]->(SWatch),
+  (SW)-[:Has_SmartWatch]->(Active),
+  (SW)-[:Has_SmartWatch]->(Gear),
+
+  (AAi)-[:has_models]->(air1),
+  (AAi)-[:has_models]->(air2),
+  (AAi)-[:has_models]->(airp),
+  (AAi)-[:has_models]->(airm),
+  (AAi)-[:has_models]->(air3),
+
+  (SGB)-[:has_models]->(bud),
+  (SGB)-[:has_models]->(bud1),
+  (SGB)-[:has_models]->(bud2),
+  (SGB)-[:has_models]->(bud3),
+  (SGB)-[:has_models]->(bud4),
+
+
+
+  (AP)-[:uses_securityType]->(ps),
+(SP)-[:uses_securityType]->(ps)
+
+
+//QUARIES
+
+// return all the nodes
+MATCH (n) RETURN n
+
+//return the two major gadget companies 
+match (n:Company) return n
+
+
+
+// Return Apple Inc company 	
+match (c:Company) where c.name = ('Apple Inc') return c
+// Return Samsung Electronics Company	
+match (c:Company) where c.name = ('Samsung Electronics Co.,Ltd') return c
+
+
+// display all the subsidiary companies of both samsung and apple
+match (n:Subsidiary) return n
+
+
+
+// Return all phones greater than $1000 euros
+match (p:phone) where p.price > 1000 return p
+
+// return affordables samsung phones with good camera quality
+match ({name: 'Samsung Phones'})-[:PRODUCED_PHONE]->(n:phone)
+where  n.camera_rating ='3', n.price < 500 return n
+
+// Return all samsung phones with best Camera rating 
+match (Subsidiary {name: 'Samsung Phones'}) -[:PRODUCED_PHONE]->(n:phone)
+where n.camera_rating ='6' return n
+
+
+
+// identify expensive iphones (above 700 euros) showing their camera rating and year manufactued
+match ({name:'Apple Phones'})-[:PRODUCED_PHONE]->(p:phone)
+where  p.price>700  return p.name, p.year, p.camera_rating
+
+// identify phones using Face_ID 
+match (p:phone) where p.Security_type Contains "FaceID" return p.name, p.year, p.camera_rating, p.price
+
+
+
+// indentify the company's sectors that produced samsung acccessories such as smart watch
+match (n:Subsidiary) 
+where (n)-[:Produced_Accessories]->({name:'Apple Watch'})
+return n.name
